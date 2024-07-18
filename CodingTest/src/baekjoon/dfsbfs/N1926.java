@@ -1,4 +1,4 @@
-package baekjoon.dfs;
+package baekjoon.dfsbfs;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,6 +8,10 @@ import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class N1926 {
+	
+	/*
+	 * https://www.acmicpc.net/problem/1926
+	 */
 	
 	static int[] dx = {0, 0, 1, -1};
 	static int[] dy = {1, -1, 0, 0};
@@ -50,10 +54,10 @@ public class N1926 {
 		
 	}
 	
-	public static void dfs(int x, int y, int count) {
+	public static void dfs(int x, int y, int cnt) {
 		
-		if(max < count) {
-			max = count;
+		if(max < cnt) {
+			max = cnt;
 		}
 		
 		for(int k=0; k<4; k++) {

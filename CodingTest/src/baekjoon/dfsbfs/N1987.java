@@ -1,4 +1,4 @@
-package baekjoon.dfs;
+package baekjoon.dfsbfs;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,6 +10,10 @@ import java.util.StringTokenizer;
 
 public class N1987 {
 
+	/*
+	 * https://www.acmicpc.net/problem/1987
+	 */
+	
 	static int[] dx = {0, 0, 1, -1};
 	static int[] dy = {1, -1, 0, 0};
 	static int row;
@@ -17,7 +21,7 @@ public class N1987 {
 	static boolean[] visited;
 	static HashSet<String> alp;
 	static int[][] arr;
-	static int max = Integer.MIN_VALUE;
+	static int max = 1;
 	
 	public static void main(String[] args) throws IOException{
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
