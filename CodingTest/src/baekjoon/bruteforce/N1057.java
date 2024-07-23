@@ -53,7 +53,5 @@ public class N1057 {
 		
 		System.out.println(res);
 		
-		
-		
 	}
 }
