@@ -1,3 +1,9 @@
+### 사이트
+
+- 프로그래머스 https://programmers.co.kr/
+- 백준 https://www.acmicpc.net/
+- 소프티어 https://softeer.ai/practice
+
 ### 코딩 테스트 유형
 
 - 구현
