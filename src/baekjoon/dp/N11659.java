@@ -10,7 +10,7 @@ public class N11659 {
         각 index에 이전 값 + 현재 값
         arr[end] - arr[start-1]로 부분합을 구할 수 있음
 
-        포인트는 부분합을 전부 구해놓고 end에서 start-1의 값을 빼는 것을 생각해내는 것 
+        포인트는 부분합을 전부 구해놓고 end에서 start-1의 값을 빼는 것을 생각해내는 것
      */
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
