@@ -25,6 +25,7 @@ public class N1021 {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
+        // indexOf를 사용하기 위해서는 deque말고 좀 더 넓은 범위인 LinkedList를 사용해야 함
         LinkedList<Integer> deque = new LinkedList<>();
         for(int i=1; i<=N; i++){
             deque.offerLast(i);
