@@ -35,6 +35,9 @@ Integer[] boxedArr = Arrays.stream(arr)
     .boxed
     .toArray(Integer::new);
     
+// collect를 쓰는 방식은 Java 11에서
+// Java 16이상에서는 바로 toList() 가능
+// ex) .boxed.toList(); -> 하지만, 이 경우에는 수정 불가능(add, remove)
 List<Integer> boxedList = Arrays.stream(arr)
     .boxed
     .collect(Collectors.toList());
@@ -42,5 +45,13 @@ List<Integer> boxedList = Arrays.stream(arr)
 // 정렬
 Arrays.sort(boxed, Collections.reverseOrder());
 boxedList.sort(Collections.reverseOrder());
+```
+
+- `List<Integer> list`에서 subList를 뽑는 방법
+```java
+List<Integer> subList = list.stream()
+        .filter(p -> p < K)
+        .toList(); // 이건 자바 16 이상 -> 수정 불가능
+        // .collect(Collectors.toList()); 이건 자바 11
 ```
 
