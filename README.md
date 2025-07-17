@@ -3,6 +3,7 @@
 - 프로그래머스 https://programmers.co.kr/
 - 백준 https://www.acmicpc.net/
 - 소프티어 https://softeer.ai/practice
+- 문제 추천 https://github.com/tony9402/baekjoon/blob/main/picked.md
 
 ### 코딩 테스트 유형
 
