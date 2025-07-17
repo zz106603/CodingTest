@@ -56,3 +56,16 @@ List<Integer> subList = list.stream()
         // .collect(Collectors.toList()); 이건 자바 11
 ```
 
+- Map에서 Value값으로 정렬하는 방법
+```java
+Map<String, Integer> map = new HashMap<>();
+// map.put..
+
+List<Map.Entry<String, Integer>> list = new ArrayList<>(map.entrySet());
+
+// 오름차순
+list.sort(Comparator.comparingInt(Map.Entry::getValue));
+// 내림차순
+list.sort(Comparator.comparingInt(Map.Entry<String, Integer>::getValue).reversed();
+```
+
