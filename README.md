@@ -68,4 +68,14 @@ list.sort(Comparator.comparingInt(Map.Entry::getValue));
 // 내림차순
 list.sort(Comparator.comparingInt(Map.Entry<String, Integer>::getValue).reversed();
 ```
+- Set에서 교집합 구하는 방법
+```java
+Set<Integer> aSet = new HashSet<>(List.of(1, 2, 4));
+Set<integer> bSet = new HashSet<>(List.of(2, 3, 4, 5, 6));
 
+Set<Integer> intersection = new HashSet<>(aSet); // aSet을 변경하지 않고 복사해서 사용
+intersection.retainAll(bSet); // {2, 4};
+
+// 대칭 차집합을 구하려면 aSet size + bSet size - 2*intersection size
+// 2를 곱한 이유는 교집합을 aSet, bSet에서 다 제거해줘야 함
+```
