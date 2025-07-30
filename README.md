@@ -79,3 +79,14 @@ intersection.retainAll(bSet); // {2, 4};
 // 대칭 차집합을 구하려면 aSet size + bSet size - 2*intersection size
 // 2를 곱한 이유는 교집합을 aSet, bSet에서 다 제거해줘야 함
 ```
+- 조합 개수 구하는 방법
+```java
+BigInteger res = BigInteger.ONE;
+// nCm = n * (n-1) * (n-2) * ... * (n-m+1) / (1 * 2 * 3 * ... * m)
+for(int i=0; i<m; i++){
+    res = BigInteger.multiply(BigInteger.valueOf(n - i));
+    res = BigInteger.divide(BigInteger.valueOf(i + 1));
+}
+return res;
+```
+
