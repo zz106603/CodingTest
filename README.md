@@ -89,4 +89,12 @@ for(int i=0; i<m; i++){
 }
 return res;
 ```
+- MM:SS 형식 계산 방법
+```java
+String s = "23:10";
+int s = toSec(s);
+public static int toSec(String s){
+    return Integer.parseInt(s.split(":")[0])*60 + Integer.parseInt(s.split(":")[1]);
+}
+```
 
