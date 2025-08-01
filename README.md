@@ -97,4 +97,15 @@ public static int toSec(String s){
     return Integer.parseInt(s.split(":")[0])*60 + Integer.parseInt(s.split(":")[1]);
 }
 ```
+- 소인수분해
+```java
+int N = 72;
+for(int i=2; i*i<=N; i++){ // √N보다 작거나 같다
+    while(N % i == 0){
+        System.out.println(i);
+        N /= i;
+    }    
+}
+if(N > 1) System.out.println(N);
+```
 
