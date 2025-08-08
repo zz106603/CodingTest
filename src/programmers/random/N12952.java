@@ -13,9 +13,9 @@ public class N12952 {
         4. 백트래킹을 통해 불가능하면 이 전으로 돌아가서 검사하는 방식으로 진행
 
      */
-    static boolean col[]; // 퀸은 같은 열에 있을 수 없음
-    static boolean diag1[]; // 퀸은 우상, 좌하 대각선에 있을 수 없음 (row + col)
-    static boolean diag2[]; // 퀸은 좌상, 우하 대각선에 있을 수 없음 (row - col + N - 1)
+    static boolean[] col; // 퀸은 같은 열에 있을 수 없음
+    static boolean[] diag1; // 퀸은 우상, 좌하 대각선에 있을 수 없음 (row + col)
+    static boolean[] diag2; // 퀸은 좌상, 우하 대각선에 있을 수 없음 (row - col + N - 1)
     static int N = 4;
     static int RESULT = 2;
     static int answer = 0;
