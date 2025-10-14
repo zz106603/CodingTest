@@ -109,3 +109,16 @@ for(int i=2; i*i<=N; i++){ // √N보다 작거나 같다
 if(N > 1) System.out.println(N);
 ```
 
+- kruskal 알고리즘
+```java
+static int find(int x){ // 그룹을 찾는다
+    if(parent[x] == x) return x;
+    return parent[x] = find(parent[x]);
+}
+
+static void union(int a, int b){
+    a = find(a);
+    b = find(b);
+    if(a != b) parent[b] = a; // 사이클이 연결되어 있지 않으면 그룹으로 연결한다
+}
+```
