@@ -122,3 +122,16 @@ static void union(int a, int b){
     if(a != b) parent[b] = a; // 사이클이 연결되어 있지 않으면 그룹으로 연결한다
 }
 ```
+
+- 공약수
+```java
+// 최대 공약수
+public int gcd(int a, int b){
+    return (b == 0) ? a : gcd(b, a%b);
+}
+
+//최소 공배수
+public int lcm(int a, int b){
+    return a*b / gcd(a, b);
+}
+```
