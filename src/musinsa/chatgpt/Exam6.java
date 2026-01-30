@@ -1,9 +1,6 @@
-package musinsa;
+package musinsa.chatgpt;
 
 import java.io.*;
-import java.util.ArrayDeque;
-import java.util.Queue;
-import java.util.StringTokenizer;
 
 public class Exam6 {
     public static void main(String[] args) throws IOException {

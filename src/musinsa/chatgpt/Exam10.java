@@ -1,4 +1,4 @@
-package musinsa;
+package musinsa.chatgpt;
 
 import java.io.*;
 import java.util.HashMap;

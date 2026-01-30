@@ -1,9 +1,6 @@
-package musinsa;
+package musinsa.chatgpt;
 
 import java.io.*;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.StringTokenizer;
 
 public class Exam8 {
